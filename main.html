@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nimit D.</title>
+</head>
+<body>
+    <div id = "navbar">
+        <div id = "logo">Nimit's Compiler</div>
+        <ul id = "options">
+            <li>Skills</li>
+            <li>Achievements</li>
+            <li>Experience</li>
+        </ul>
+        <div id = "menu" onclick="show()">
+            <div class = "line"></div>
+            <div class = "line"></div>
+            <div class = "line"></div>
+        </div>
+    </div>
+    <div id = "box">
+        <div id="code">
+            <form  method="post">
+                <textarea name="codePart" id="codePart" ></textarea>
+                <!-- <input type="tex t" name="lang" id = "lang">  -->
+                <input type="submit"name="submit" id="submit">
+            </form>
+        </div>
+        <div id="io">
+            <div id = "inputbox">
+                <textarea name="input" id="input" > </textarea>
+            </div>
+            <div id="output"></div>
+        </div>   
+    </div>
+        <script src = "script.js"></script>
+</body>
+</html>

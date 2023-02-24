@@ -1,0 +1,158 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+#code{
+    overflow-x: hidden;
+}
+#navbar{
+    
+    display: flex;
+    justify-content: space-around;
+    background-color: cadetblue;
+    font-family: papyrus;
+    font-size: 1.4em;
+    align-items: center;
+    color: white;
+    padding: 0.3em;
+    border-bottom: 1px solid green;
+}
+
+textarea{
+    padding: 5px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#navbar ul {
+    list-style-type: none;
+}
+#navbar ul li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.col{
+    
+    background-color: #ECF3F3;
+    resize: none;
+}
+#menu{
+    display:none;
+    position: absolute;
+    top:3px;
+    right: 3px;
+}
+.line{
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#box{
+    display: flex;
+    overflow: scroll;
+}
+#cpp{
+    font-size:larger;
+    font-family: papyrus;
+}
+#codePart{
+    height: 100%;
+}
+#io
+{   height: 100%;
+    width: 50vw;
+    
+}
+#inputbox {
+    display: inline-block;
+   height: 60%;
+    width: 100%;
+}
+#output{
+    display: inline-block;
+    height: 40%;
+    margin-top: -3px;
+    width: 100%;
+}
+#codePart{
+    height: 100%;
+    width: 50vw;
+    /* border: 0px; */
+    resize: none;
+}
+
+#lang{
+    display: none;
+}
+#submit{
+    position: absolute;
+    top: 85vh;
+    left: 14px;
+    animation: mymove 5s infinite;
+}
+#footer{
+    background-color: cadetblue;
+    padding: 0.6em;
+    text-align: center;
+    color: white;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
+@media all and (max-width:480px){
+    #menu{
+        display:block;
+    }
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul li{
+        display: block;
+        
+    }
+    #navbar ul{
+        display: none;
+    }
+    #logo{
+        width: 100%;
+    }
+    #box{
+        flex-direction: column;
+    }
+    #code{
+        width: 100vw;
+        height: 96vh;
+        border: 2px solid green;
+    }
+    #io
+    {
+        width: 100vw;
+        height: 96vh;
+        border: 2px solid violet;
+    }
+    #inputbox{
+        display: inline-block;
+        height: 50%;
+        width: 100%;
+        border: 2px solid yellow;
+    }
+    #output{
+        display: inline-block;
+        height: 50%;
+        width: 100%;
+        border: 2px solid green;
+    }
+}
+form{
+    height: 96vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

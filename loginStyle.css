@@ -1,0 +1,16 @@
+#screenbox{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+}
+#loginbox{
+    height: 50%;
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+    border: 2px solid green;
+}
+input{
+    display: block;
+}
